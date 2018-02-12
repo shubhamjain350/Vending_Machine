@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+      <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="brython.js"></script> 
+<script type="text/javascript" src="pyscript.js"></script>
+</head>
+<body>
+        <div class="container-fluid teal lighten-2" >
+        <!-- Page Content goes here -->
+        <!--div class="parallax-container">
+                <div class="parallax"><img src="pharmacy.jpg"></div>
+              </div-->
+                  
+        <img class="centre"  src="pharmacy1.jpg" style="width:80%; height:650px;margin-left: 120px" >
+        
+       
+       
+        </div>
+        <br><br>
+        <div class="row">
+          
+          <div class="col s4" >
+            <div style="width:450px; height:400px;margin-left:250px">
+              <a  href="causes.html" class="waves-effect waves-light btn-large">Common Problems?</a>  
+            </div>
+    
+          </div>
+          <div class="col s4">
+            <div style="width:750px; height:800px;margin-left:250px">
+
+             <a id ="scan" class="waves-effect waves-light btn-large" href="/run_script" value="Launch Installer" >Analyze Pulse</a>  
+
+            </div>
+    
+          </div>
+            <div class="col s4" >
+            <div style="width:450px; height:400px;margin-left:250px">
+              <a  href="index1.html" class="waves-effect waves-light btn-large">Urgent Help</a>  
+            </div>
+    
+          </div>
+        </div>
+       
+
+             
+                    
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>
+<script>
+     $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+</script>
+<script type="text/javascript"> 
+
+$('#scan').on('click', function() {
+    $.ajax({
+        url : 'run.php'
+    }).done(function(data) {
+        console.log(data);
+    });
+});
+
+
+
+</script>>
+
+
+</body>
+</html>            
+           
